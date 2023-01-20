@@ -24,7 +24,5 @@ services:
     image: postgres
     ports:
       - "5432:5433"
-    environment:
-      - POSTGRES_DB=Cinema_DB
-      - POSTGRES_USER=abwcbcui
-      - POSTGRES_PASSWORD=d1o-YIjrqQEB0osq-m8VoLyIKbuxEElJ
+    env_file:
+      - .env
